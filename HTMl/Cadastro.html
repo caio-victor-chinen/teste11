@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+    <title>Tela de Cadastro</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Tela de Cadastro</h2>
+        <form action="../PHP/cadastro.php" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
 </body>
 </html>

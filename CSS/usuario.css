@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #4aa1e9;
-
 }
 
 .container {
@@ -11,6 +10,7 @@ body {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     opacity: 0.8;
+    
 }
 
 h2 {
@@ -26,7 +26,6 @@ label {
     font-weight: bold;
 }
 
-input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
