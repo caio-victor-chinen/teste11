@@ -1,25 +1,18 @@
 <?php
 
-require("usuario.php");
+        require("conexao.php");
 
 
-    $email = $_POST["email"];
-    $senha = $_POST["senha"];
+        $email = $_POST["email"];
+        $senha = $_POST["senha"];
 
 
-    $sql = "SELECT * FROM cadastro (email, senha) VALUES ('$email', '$senha')";
+    $sql = mysqli_query("SELECT Email, senha FROM cadastro WHERE Email = "$email" AND senha = "$senha" ");
 
-    if(mysqli_query($conn, $sql)){
-        echo "Login feito com Sucesso";
+    if($sql && mysqli_num_rows($sql)){
+        echo "Login bem sucedido";
     }else{
-        echo "Falha no login" . $stmt->error;
+        echo "Usuario ou Senha estão incorretos" ;
     }
-
-    $conn->close();
-
-
-
-
-
-
+    
 ?>
