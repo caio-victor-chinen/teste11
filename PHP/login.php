@@ -7,7 +7,7 @@ require("conexao.php");
 $email = $_POST["email"];
 $senha = $_POST["senha"];
 
-$sql = "SELECT email, senha  FROM cadastro WHERE email = '$email' AND senha = '$senha'";
+$sql = "SELECT email, senha  FROM oberonproject WHERE email = '$email' AND senha = '$senha'";
 $result = $conn->query($sql);
 
 if($result->num_rows  > 0){
