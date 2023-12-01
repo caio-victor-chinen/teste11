@@ -1,44 +1,79 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #4aa1e9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 0.8;
-    
-}
-
-h2 {
+/* Estilo para o contêiner do login */
+.login-container {
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 0 auto; /* Centraliza o contêiner */
 }
 
-.form-group {
+/* Estilo para o título do formulário */
+h2 {
+    color: #333;
     margin-bottom: 20px;
 }
 
+/* Estilo para os rótulos dos campos */
 label {
     display: block;
-    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
 }
 
-input[type="email"],
-input[type="password"] {
+/* Estilo para os campos de entrada */
+input {
     width: 100%;
     padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-button {
-    background-color: #c300ff;
+/* Estilo para o botão de login */
+input[type="submit"] {
+    background-color: #2ecc71;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para o botão de login quando hover */
+input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* Estilo para o link de esqueceu a senha ou registro (opcional) */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Estilo para o link de esqueceu a senha ou registro quando hover (opcional) */
+a:hover {
+    text-decoration: underline;
 }
